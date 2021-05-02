@@ -1,0 +1,18 @@
+
+<div class="row">
+
+  <div class="col-md-4">
+  	<form id="chat-form">
+	  <label>Enter your message: </label><br>
+	  <input type="text" data-behavior="room_speaker">
+	  <button type="button" class="btn btn-success" id="submitbutton">Send</button>
+    </form>
+  </div>
+
+  <div class="col-md-8" style ="height:450px;overflow-y: scroll; border-style: solid; border-width: 1px; padding: 10px;">
+	<div class="js-messages">
+  	  <%= render @messages %>
+	</div>
+  </div>
+
+</div>
